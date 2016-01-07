@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0543D9361C3E13A300B3B749 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543D9351C3E13A300B3B749 /* AddViewController.swift */; };
+		0543D9381C3E13BD00B3B749 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543D9371C3E13BD00B3B749 /* DetailedViewController.swift */; };
 		05E347761C3D0568002E81B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E347751C3D0568002E81B7 /* AppDelegate.swift */; };
 		05E347781C3D0568002E81B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E347771C3D0568002E81B7 /* ViewController.swift */; };
 		05E3477B1C3D0568002E81B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E347791C3D0568002E81B7 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0543D9351C3E13A300B3B749 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0543D9371C3E13BD00B3B749 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		05E347721C3D0568002E81B7 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E347751C3D0568002E81B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E347771C3D0568002E81B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				05E347751C3D0568002E81B7 /* AppDelegate.swift */,
 				05E347771C3D0568002E81B7 /* ViewController.swift */,
+				0543D9351C3E13A300B3B749 /* AddViewController.swift */,
+				0543D9371C3E13BD00B3B749 /* DetailedViewController.swift */,
 				05E347791C3D0568002E81B7 /* Main.storyboard */,
 				05E3477C1C3D0568002E81B7 /* Assets.xcassets */,
 				05E3477E1C3D0568002E81B7 /* LaunchScreen.storyboard */,
@@ -199,6 +205,8 @@
 			files = (
 				05E347781C3D0568002E81B7 /* ViewController.swift in Sources */,
 				05E347761C3D0568002E81B7 /* AppDelegate.swift in Sources */,
+				0543D9381C3E13BD00B3B749 /* DetailedViewController.swift in Sources */,
+				0543D9361C3E13A300B3B749 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +394,7 @@
 				05E347911C3D0568002E81B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05E347921C3D0568002E81B7 /* Build configuration list for PBXNativeTarget "RecipeTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +403,7 @@
 				05E347941C3D0568002E81B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
