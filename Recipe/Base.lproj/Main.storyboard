@@ -200,10 +200,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="honeycomb" translatesAutoresizingMaskIntoConstraints="NO" id="Mdk-U2-gmv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="honeycomb" translatesAutoresizingMaskIntoConstraints="NO" id="Mdk-U2-gmv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MUU-M1-958">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MUU-M1-958">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -213,6 +213,16 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mdk-U2-gmv" secondAttribute="bottom" id="2qd-6x-3pE"/>
+                            <constraint firstAttribute="trailing" secondItem="MUU-M1-958" secondAttribute="trailing" id="3Zb-mg-Ggw"/>
+                            <constraint firstItem="Mdk-U2-gmv" firstAttribute="leading" secondItem="zp7-8m-EJS" secondAttribute="leading" id="7Md-Rq-jbh"/>
+                            <constraint firstItem="xEu-Ge-djJ" firstAttribute="top" secondItem="MUU-M1-958" secondAttribute="bottom" id="OEs-Tt-rdc"/>
+                            <constraint firstItem="MUU-M1-958" firstAttribute="top" secondItem="Pi4-3W-cIW" secondAttribute="bottom" id="nCu-Jt-mJC"/>
+                            <constraint firstItem="MUU-M1-958" firstAttribute="leading" secondItem="zp7-8m-EJS" secondAttribute="leading" id="nQU-pO-b66"/>
+                            <constraint firstAttribute="trailing" secondItem="Mdk-U2-gmv" secondAttribute="trailing" id="vFI-2H-bE4"/>
+                            <constraint firstItem="Mdk-U2-gmv" firstAttribute="top" secondItem="zp7-8m-EJS" secondAttribute="top" id="yB6-Zs-0hu"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>

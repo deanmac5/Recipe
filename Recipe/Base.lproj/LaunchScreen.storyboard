@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="breadslaunch" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-Bv-EUd">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breadslaunch" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-Bv-EUd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-DD-zdi">
                                 <rect key="frame" x="80" y="48" width="441" height="127"/>
@@ -36,7 +36,14 @@ Recipes</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PXq-Bv-EUd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4bs-Fz-WOI"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PXq-Bv-EUd" secondAttribute="bottom" id="Aeq-lH-wcT"/>
+                            <constraint firstAttribute="trailing" secondItem="PXq-Bv-EUd" secondAttribute="trailing" id="b3p-5h-F65"/>
+                            <constraint firstItem="PXq-Bv-EUd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="om5-nA-ZRZ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
