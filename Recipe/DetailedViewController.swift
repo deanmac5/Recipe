@@ -9,6 +9,8 @@
 import UIKit
 
 class DetailedViewController: UIViewController {
+    
+    var preRecipe:String?
 
     @IBOutlet var recipeContent: UITextView!
     
@@ -16,5 +18,9 @@ class DetailedViewController: UIViewController {
         super.viewDidLoad()
         
         recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.title = preRecipe
     }
 }

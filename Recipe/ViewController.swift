@@ -29,7 +29,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("customcell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("customcell") as! customcell
         
         if(indexPath.item % 2 == 0){
             cell.backgroundColor = UIColor.clearColor()
@@ -40,8 +40,17 @@ class ViewController: UITableViewController {
         
         cell.textLabel?.textColor = UIColor.whiteColor() 
         cell.textLabel?.text = array[indexPath.item]
+        cell.Recipe = cell.textLabel?.text
         return cell
     
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "detailview"){
+            let cell = sender as! customcell
+            let detailView = segue.destinationViewController as! DetailedViewController
+            detailView.preRecipe = cell.Recipe
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
