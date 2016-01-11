@@ -12,6 +12,7 @@ class AddViewController: UIViewController {
 
     @IBOutlet var recipeContent: UITextView!
     @IBOutlet var titleText: UITextField!
+    @IBOutlet var doneButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +20,19 @@ class AddViewController: UIViewController {
         titleText.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
         recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
     }
+    
+    
+    
+    @IBAction func doneButton_clicked(sender: AnyObject) {
+        recipeContent.resignFirstResponder()
+        
+    }
+    
+    
+    
+    @IBAction func titleDoneButton_click(sender: AnyObject) {
+        titleText.resignFirstResponder()
+        
+    }
+    
 }

@@ -77,7 +77,10 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="titleDoneButton_click:" destination="dcH-Fu-feU" eventType="editingDidEndOnExit" id="c6F-Fk-PxW"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CSz-dr-Ja5">
                                 <rect key="frame" x="0.0" y="162" width="375" height="391"/>
@@ -178,6 +181,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Recipe" id="jQL-5C-5Ue">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="6SW-Ko-RsV">
+                            <connections>
+                                <action selector="doneButton_clicked:" destination="dcH-Fu-feU" id="i1k-9Z-lID"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="recipeContent" destination="CSz-dr-Ja5" id="MD3-Bf-kza"/>
