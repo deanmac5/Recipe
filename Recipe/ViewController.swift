@@ -55,6 +55,7 @@ class ViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        tableView.reloadData()
         navigationController?.navigationBar.alpha = 0.5
     }
 
