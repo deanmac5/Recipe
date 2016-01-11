@@ -17,6 +17,7 @@
 		05E3478B1C3D0568002E81B7 /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3478A1C3D0568002E81B7 /* RecipeTests.swift */; };
 		05E505471C434D3B0077F1A6 /* customcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E505461C434D3B0077F1A6 /* customcell.swift */; };
 		05E5054B1C4356610077F1A6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5054A1C4356610077F1A6 /* Recipe.swift */; };
+		05E5054D1C43570E0077F1A6 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E5054C1C43570E0077F1A6 /* RecipeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		05E3478C1C3D0568002E81B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E505461C434D3B0077F1A6 /* customcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customcell.swift; sourceTree = "<group>"; };
 		05E5054A1C4356610077F1A6 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		05E5054C1C43570E0077F1A6 /* RecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				05E347751C3D0568002E81B7 /* AppDelegate.swift */,
 				05E347771C3D0568002E81B7 /* ViewController.swift */,
 				05E5054A1C4356610077F1A6 /* Recipe.swift */,
+				05E5054C1C43570E0077F1A6 /* RecipeManager.swift */,
 				05E505461C434D3B0077F1A6 /* customcell.swift */,
 				0543D9351C3E13A300B3B749 /* AddViewController.swift */,
 				0543D9371C3E13BD00B3B749 /* DetailedViewController.swift */,
@@ -213,6 +216,7 @@
 				05E347781C3D0568002E81B7 /* ViewController.swift in Sources */,
 				05E347761C3D0568002E81B7 /* AppDelegate.swift in Sources */,
 				05E5054B1C4356610077F1A6 /* Recipe.swift in Sources */,
+				05E5054D1C43570E0077F1A6 /* RecipeManager.swift in Sources */,
 				0543D9381C3E13BD00B3B749 /* DetailedViewController.swift in Sources */,
 				0543D9361C3E13A300B3B749 /* AddViewController.swift in Sources */,
 			);
