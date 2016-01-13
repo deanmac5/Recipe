@@ -27,7 +27,7 @@ class AddViewController: UIViewController {
         
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textTitleDidChange", name: UITextFieldTextDidChangeNotification, object: nil)
-         NSNotificationCenter.defaultCenter().addObserver(self, selector: "recipeContentDidChange", name: UITextFieldTextDidChangeNotification, object: nil)
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: "recipeContentDidChange", name: UITextViewTextDidChangeNotification, object: nil)
     }
     
     

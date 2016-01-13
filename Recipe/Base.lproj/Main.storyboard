@@ -184,7 +184,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Add Recipe" id="jQL-5C-5Ue">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="6SW-Ko-RsV">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="6SW-Ko-RsV">
                             <connections>
                                 <action selector="doneButton_clicked:" destination="dcH-Fu-feU" id="i1k-9Z-lID"/>
                             </connections>
