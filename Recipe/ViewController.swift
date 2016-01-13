@@ -17,6 +17,14 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.rowHeight = 70
         tableView.backgroundView = UIImageView(image: UIImage(named: "breads"))
+        
+      
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var myobject = defaults.objectForKey("myobject") as? String
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

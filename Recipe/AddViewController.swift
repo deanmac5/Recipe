@@ -85,7 +85,11 @@ class AddViewController: UIViewController {
         RecipeManager.addRecipe(titleText.text!, content: recipeContent.text)
         titleText.text = ""
         recipeContent.text = ""
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject("mystring", forKey: "myobject")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
+       
         
         
         
