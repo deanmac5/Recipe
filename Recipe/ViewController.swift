@@ -19,9 +19,7 @@ class ViewController: UITableViewController {
         tableView.backgroundView = UIImageView(image: UIImage(named: "breads"))
         
       
-        
-        var defaults = NSUserDefaults.standardUserDefaults()
-        var myobject = defaults.objectForKey("myobject") as? String
+        NSUserDefaultsManager.initializeDefaults()
         
         
         

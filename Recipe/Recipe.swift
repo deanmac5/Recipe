@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Recipe: NSObject {
+class Recipe: NSObject, NSCoding {
     var title: String?
     var content: String?
     
@@ -20,4 +20,28 @@ class Recipe: NSObject {
     override init(){
         super.init()
     }
+    
+    required init(coder aDecoder: NSCoder){
+        if let titleDecoded = aDecoder.decodeObjectForKey("title"){
+            title = titleDecoded as? String
+        }
+        
+        if let contentDecoded = aDecoder.decodeObjectForKey("content"){
+            content = contentDecoded as? String
+        }
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        if let titleEncoded = title {
+            aCoder.encodeObject(titleEncoded, forKey: "title")
+        }
+        
+        if let contentEncoded = content {
+            aCoder.encodeObject(contentEncoded, forKey: "content")
+        }
+    }
+    
+    
+    
+    
 }
