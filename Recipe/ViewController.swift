@@ -60,6 +60,13 @@ class ViewController: UITableViewController {
         tableView.reloadData()
         navigationController?.navigationBar.alpha = 0.5
     }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == .Delete){
+            RecipeManager.DeleteRecipe(indexPath.item)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
 
 
 }
