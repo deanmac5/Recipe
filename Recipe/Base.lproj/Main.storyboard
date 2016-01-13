@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="70" id="5BO-Qp-0OC"/>
                                 </constraints>
                                 <state key="normal" title="Add">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="addButton_click:" destination="dcH-Fu-feU" eventType="touchUpInside" id="OUi-UZ-1Ca"/>
