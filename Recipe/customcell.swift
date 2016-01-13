@@ -10,6 +10,6 @@ import UIKit
 
 class customcell: UITableViewCell {
     
-    var Recipe:String? = ""
+    var recipe:Recipe?
 
 }

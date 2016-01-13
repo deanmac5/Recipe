@@ -15,6 +15,7 @@ class AddViewController: UIViewController {
     @IBOutlet var doneButton: UIBarButtonItem!
     @IBOutlet var addButton: UIButton!
     
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,10 +74,20 @@ class AddViewController: UIViewController {
     
     
     @IBAction func addButton_click(sender: AnyObject) {
-        RecipeManager.addRecipe(titleText.text!, content: recipeContent.text)
         
+        activityIndicator.startAnimating()
+        
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(time,dispatch_get_main_queue()){
+            self.activityIndicator.stopAnimating()
+        }
+        
+        RecipeManager.addRecipe(titleText.text!, content: recipeContent.text)
         titleText.text = ""
         recipeContent.text = ""
+        
+        
+        
         
     }
     

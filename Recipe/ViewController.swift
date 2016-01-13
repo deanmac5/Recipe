@@ -25,7 +25,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return RecipeManager.recipes.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -38,9 +38,11 @@ class ViewController: UITableViewController {
             cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
         }
         
-        cell.textLabel?.textColor = UIColor.whiteColor() 
-        cell.textLabel?.text = array[indexPath.item]
-        cell.Recipe = cell.textLabel?.text
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        
+        let recipe = RecipeManager.recipes[indexPath.item]
+        cell.textLabel?.text = recipe.title
+        cell.recipe = recipe
         return cell
     
     }
@@ -49,7 +51,7 @@ class ViewController: UITableViewController {
         if(segue.identifier == "detailview"){
             let cell = sender as! customcell
             let detailView = segue.destinationViewController as! DetailedViewController
-            detailView.preRecipe = cell.Recipe
+            detailView.preRecipe = cell.recipe
         }
     }
     

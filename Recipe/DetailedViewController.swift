@@ -10,7 +10,7 @@ import UIKit
 
 class DetailedViewController: UIViewController {
     
-    var preRecipe:String?
+    var preRecipe:Recipe?
 
     @IBOutlet var recipeContent: UITextView!
     
@@ -21,6 +21,7 @@ class DetailedViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.title = preRecipe
+        self.title = preRecipe?.title
+        self.recipeContent.text = preRecipe?.content
     }
 }
